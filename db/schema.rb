@@ -37,8 +37,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_26_142029) do
     t.bigint "author_id", null: false
     t.string "title"
     t.text "text"
-    t.integer "commentsCounter"
-    t.integer "likesCounter"
+    t.integer "comments_counter"
+    t.integer "llikes_counter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_id"], name: "index_posts_on_author_id"
