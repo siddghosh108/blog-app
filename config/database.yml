@@ -7,13 +7,13 @@ development:
   <<: *default
   database: blog_app_development
   username: postgres
-  password: meryem99
+  password: murlimohan108
 
 test:
   <<: *default
-  database: blog_app_test
+  database: blog_app _test
   username: postgres
-  password: meryem99
+  password: murlimohan108
 
 production:
   <<: *default
