@@ -37,7 +37,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_28_125838) do
     t.bigint "author_id", null: false
     t.string "title"
     t.text "text"
-    t.integer "commentsCounter"
+    t.integer "comments_counter"
+    t.integer "likes_counter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "likesCounter"
@@ -51,7 +52,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_28_125838) do
     t.integer "posts_counter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "posts_counter"
+    t.integer "postsCounter"
   end
 
   add_foreign_key "comments", "posts"
