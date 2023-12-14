@@ -1,26 +1,20 @@
-<% @posts.each do |post| %>
-<ul class="main-container">
- <li class="blog">
-      <a href="<%= user_post_path(post.author_id, post.id) %>" class="blog">
-        <h2><%= post.title %> by <%= User.find(post.author_id).name %></h2>
-        <p><%= post.text %></p>
-        <div class="features-lastpage">
-        <span>Comments: <%= post.comments.length %></span>
-        <span>Likes: <%= post.likes.length %></span>
+<section class="container">
+    <div class="row mt-4">
+        <div class="col-lg-12 border border-dark">
+            <h4 class="pt-2">'<%= @post.title %>' by <%= @user.name %></h4>
+            <p class="mt-2"><%= @post.text %></p>
+            <p class="d-flex justify-content-end">
+                <%= render partial: 'shared/like', locals: { user: @user, post: @post } %>
+            </p>
+            <p class="d-flex justify-content-end"><%= link_to "Add Comment", new_user_post_comment_path(@user, @post), class:"text-dark" %>, Comments <%= @post.comments_counter %>, Likes <%= @post.likes_counter%></p>
         </div>
-      </a>
-    </li>
-    </ul>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 border border-dark">
+            <% @comments.each do |comment| %>
+                <p class=""><%= comment.author.name %>: <%= comment.text %> </p>
+            <% end %>
 
-    <ul class="comments">
-      <% unless post.comments.any? %>
-        <h2>There are no comments to show.</h2>
-      <% end %>
-      <% post.comments.each do |comment| %>
-        <li >
-          <span><%= User.find(comment.user_id).name %>:</span>
-          <span><%= comment.text %></span>
-        </li>
-      <% end %>
-    </ul>
-  <% end %>
+        </div>
+    </div>
+</section>
