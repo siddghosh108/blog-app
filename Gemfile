@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -72,10 +70,4 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
-end
-
-group :development, :test do
-  gem 'rubocop-capybara'
-  gem 'rubocop-rails'
-  gem 'rubocop-rspec'
 end
