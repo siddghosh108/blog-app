@@ -13,6 +13,6 @@
  *= require_tree .
  *= require_self
  */
- img {
-    border: 1px solid #ccc;
-  }
+img {
+  border: 1px solid #ccc;
+}
