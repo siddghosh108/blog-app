@@ -12,11 +12,7 @@
     <div class="row">
         <div class="col-lg-12 border border-dark">
             <% @comments.each do |comment| %>
-                <% if comment.author.present? %>
                 <p class=""><%= comment.author.name %>: <%= comment.text %> </p>
-                <% else %>
-                <p class="">Anonymous User</p>
-              <% end %>
             <% end %>
 
         </div>
