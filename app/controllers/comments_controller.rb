@@ -1,13 +1,15 @@
 class CommentsController < ApplicationController
+  before_action :authenticate_user!
+
   def new
-    @user = User.find(params[:user_id])
+    @user = Post.find(params[:user_id])
     @post = Post.find(params[:post_id])
     @comment = Comment.new
   end
 
   def create
     @user = current_user
-    @comment = @user.comments.create(comment_params)
+    @comment = @user.comments.build(comment_params)
     @comment.post_id = params[:post_id]
 
     if @comment.save
