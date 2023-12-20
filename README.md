@@ -90,13 +90,9 @@ it will install the required gemfile for running the project
 ## 👥 Author <a name="author"></a>
 
 👤 Siddhartha Ghosh
-👤 Afimia Fidelis Izebiafe
 
 - GitHub: [@siddghosh108](https://github.com/siddghosh108)
 - LinkedIn: [@siddhartha-ghosh-65902718](https://www.linkedin.com/in/siddhartha-ghosh-65902718/)
-
-- GitHub: [@Izebiafe](https://github.com/Izebiafe)
-- LinkedIn: [@sIzebiafe](https://www.linkedin.com/in/Izebiafe/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
