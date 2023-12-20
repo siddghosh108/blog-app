@@ -5,13 +5,13 @@ default: &default
 
 development:
   <<: *default
-  database: blog_app_development
+  database: blog_app_device_development
   username: postgres
   password: murlimohan108
 
 test:
   <<: *default
-  database: blog_app_test
+  database: blog_app_ndevice_test
   username: postgres
   password: murlimohan108
 
