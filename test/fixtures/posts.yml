@@ -3,13 +3,13 @@
 one:
   author: one
   title: MyString
-  text: MyText
+  text: MyString
   comments_counter: 1
   likes_counter: 1
 
 two:
   author: two
   title: MyString
-  text: MyText
+  text: MyString
   comments_counter: 1
   likes_counter: 1

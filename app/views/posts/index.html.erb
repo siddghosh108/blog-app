@@ -27,7 +27,7 @@
                     <tbody>
                         <% post.comments.each do |comment| %>
                             <tr>
-                                <td><%= comment.author.name %>: <%= comment.text %></td>
+                                <td><%= comment.author.name %>: <%= comment.body %></td>
                                 <td>
                                     <% if can? :destroy, comment %>
                                         <%= button_to 'Delete', user_post_comment_path(post.author, post, comment), method: :delete, class: 'btn btn-light text-danger btn-sm'%>
